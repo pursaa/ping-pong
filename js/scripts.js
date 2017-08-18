@@ -1,12 +1,12 @@
-var leapYear = function(num) {
+var outPut = function(num) {
   if (num % 15 === 0) {
-  return "ping-pong";
+  return "Ping-Pong";
   }
   if (num % 5 === 0) {
-  return "pong";
+  return "Pong";
   }
   else if (num % 3 === 0) {
-  return "ping";
+  return "Ping";
   }
   else {
     return num;
@@ -15,13 +15,12 @@ var leapYear = function(num) {
 
 // jQuery user interface logic here.
 $(document).ready(function(){
-  $("form#inPut").submit(function(event){
+  $("#inPut").submit(function(event){
     event.preventDefault();
     $("#outPut").text("");
 
-    var num = parseInt($("input#inNumber").val());
-    var result = leapYear(num);
-
+    var num = parseInt($("#inPutNumber").val());
+    var result = outPut(num);
     $("#outPut").text(result);
   });
 });

@@ -1,0 +1,35 @@
+body {
+  background-color:  #e6ffcc;
+  text-align: center;
+}
+
+.outPutInfo {
+color: #ff1590;
+font-size: 25px;
+font-style: italic;
+font-weight: bold;
+font-family: monospace;
+}
+#outPut {
+  color: purple;
+}
+.jumbotron {
+  background-color: #4f9900;
+  text-align: center;
+  color: #e6ffcc;
+  border: 10px double #e6ffcc;
+}
+#inPutNumber {
+  color: red;
+}
+#inPut {
+  color: #0033cc;
+  font-size: 25px;
+}
+.btn {
+  background-color: pink;
+  color: #cc00cc;
+  font-weight: 600;
+  border: 5px double #cc00cc;
+  font-size: 15px;
+}
