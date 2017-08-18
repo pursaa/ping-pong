@@ -1,6 +1,6 @@
 var leapYear = function(num) {
   if (num % 3 === 0) {
-  return true;
+  return "ping";
   } else {
     return false;
   }
