@@ -1,19 +1,23 @@
 //Business logic
-var count = function(inputNumber){
-  if (inputNumber === 2){
+var count = function(num){
+
+  if ((num) === 2){
+
     return true;
   }
 };
-debugger;
+
 //user interface logic
 $(document).ready(function(){
-$("#inPut").submit(function(event){
-  event.peventDefault();
-  var inputNumber = parseInt($("#inNumber").val());
-  var outputNumbers = count(inputNumber);
-  $("#outPut").text(outputNumbers);
+$("form#inPut").submit(function(event){
+  event.preventDefault();
+  var num = parseInt($("#inNumber").val());
+  var result = count(num);
 
-  console.log(inputNumbers);
+  $("#outPut").text(result);
+  //
+  // $("#outPut").show();
+
 
   });
 });
