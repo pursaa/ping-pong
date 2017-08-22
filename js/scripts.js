@@ -3,11 +3,10 @@ var outPut = function(num) {
 
   var loop = [];
   for(var i = 1; i <= num; i++){
-    loop.forEach(function(loop){
+    // loop.forEach(function(loop){
 
-    });
-    console.log(i);
-
+    // console.log(i);
+    alert(i);
     // if (i % 15 === 0) {
     //   result += "Ping-Pong";
     // }else if(i % 5 === 0) {
@@ -16,8 +15,10 @@ var outPut = function(num) {
     //   reuslt+=("Ping");
     // }else {
     //   result += i;
+    // }
   // }
-  }
+};
+
 };
 
 //user interface logic
