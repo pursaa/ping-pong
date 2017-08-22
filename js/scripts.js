@@ -1,14 +1,22 @@
 //business logic
-//business logic
 var outPut = function(num) {
-  if (num % 15 === 0) {
-    return "Ping-Pong";
-  }if (num % 5 === 0) {
-    return "Pong";
-  }else if (num % 3 === 0) {
-    return "Ping";
-  }else {
-    return num;
+
+  var loop = [];
+  for(var i = 1; i <= num; i++){
+    loop.forEach(function(loop){
+
+    });
+    console.log(i);
+
+    // if (i % 15 === 0) {
+    //   result += "Ping-Pong";
+    // }else if(i % 5 === 0) {
+    //   result += "Pong";
+    // }else if (i % 3 === 0) {
+    //   reuslt+=("Ping");
+    // }else {
+    //   result += i;
+  // }
   }
 };
 
