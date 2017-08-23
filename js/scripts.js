@@ -1,17 +1,30 @@
 //business logic
-//business logic
 var outPut = function(num) {
-  if (num % 15 === 0) {
-    return "Ping-Pong";
-  }if (num % 5 === 0) {
-    return "Pong";
-  }else if (num % 3 === 0) {
-    return "Ping";
-  }else {
-    return num;
-  }
-};
 
+var resultArrays = [];
+// resultArrays.forEach(function(resultArray){
+
+for(var i = 1; i <= num; i++){
+
+  if (i % 15 === 0) {
+    resultArrays.push("Ping-Pong");
+    console.log(resultArrays);
+
+
+  }if (i % 5 === 0) {
+    resultArrays.push("Pong");
+
+  }else if (i % 3 === 0) {
+    resultArrays.push("Ping");
+
+  }else {
+    resultArrays.push(i);
+
+  }
+  $("#outPut").text(resultArrays);
+}
+// });
+};
 //user interface logic
 $(document).ready(function(){
   $("#inPut").submit(function(event){
@@ -22,4 +35,5 @@ $(document).ready(function(){
     var result = outPut(num);
     $("#outPut").text(result);
   });
+
 });
