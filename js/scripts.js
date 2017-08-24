@@ -3,7 +3,9 @@ var outPut = function(num) {
 
 var resultArrays = [];
 // resultArrays.forEach(function(resultArray){
+
 for(var i = 1; i <= num; i++){
+
   if (i % 15 === 0) {
     // resultArrays.push("Ping-Pong");
     $("#list").append("<li>ping-pong</li>");
@@ -16,11 +18,14 @@ for(var i = 1; i <= num; i++){
   }else {
     // resultArrays.push(i);
      $("#list").append("<li>" + i + "</li>");
+
   }
   // $("#outPut").text(resultArrays);
 }
+
 // });
 };
+
 //user interface logic
 $(document).ready(function(){
   $("#inPut").submit(function(event){
@@ -28,7 +33,8 @@ $(document).ready(function(){
     $("#outPut").text("");
     var num = parseInt($("#inPutNumber").val());
     var result = outPut(num);
-    // $("#outPut").text(result);
+    $("#outPut").text(result);
+
   });
 
 });

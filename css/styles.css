@@ -2,6 +2,12 @@ body {
   background-color:  #e6ffcc;
   text-align: center;
 }
+.container {
+  background-color: rgba(130,255, 204, 0.5);
+}
+img {
+  padding-bottom: 30px;
+}
 h4 {
   color: green;
 }
@@ -39,10 +45,15 @@ font-family: monospace;
 #rule {
   text-align: left;
 }
-.btn {
+.btn{
   background-color: pink;
   color: #cc00cc;
   font-weight: 600;
   border: 5px double #cc00cc;
-  font-size: 15px;
+  font-size: 30px;
+
+}
+#list {
+  list-style: none;
+  margin-right: 5%
 }
